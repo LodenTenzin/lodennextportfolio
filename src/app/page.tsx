@@ -1,5 +1,5 @@
-import { Newsreader, Inter } from "next/font/google";
-
+import { Inter } from "next/font/google";
+import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
             <hr className="border-0.5 border-[#e1e1e1] w-56 relative bottom-3"></hr>
           </div>
           <div className="flex flex-row justify-end w-full my-1">
-            <img src='/Group 481.svg' className="mr-2" />
+            <Image src='/Group 481.svg' className="mr-2" alt="pinIcon"/>
             <h4 className="font-ibm text-xs text-[#454545] mr-2">NJ/NY</h4>
           </div>
         </div>
