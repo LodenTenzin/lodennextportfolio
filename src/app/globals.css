@@ -1,0 +1,41 @@
+@import url("https://use.typekit.net/wgl4zxx.css");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #F8F8F8;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-ibm: "IBM Plex Mono", monospace;
+  --font-handwriting: "adobe-handwriting", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #F8F8F8;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+  h1{
+    font-family: "Adobe Handwriting", sans-serif;
+  }
+  h2{
+    font-family: "courier-new", sans-serif;
+  }
+  h3{
+    font-family: "Adobe Handwriting", sans-serif;
+  }
+  p{
+    font-family: "Inter", serif;
+  }
+}
